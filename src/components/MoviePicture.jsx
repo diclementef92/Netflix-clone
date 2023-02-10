@@ -1,8 +1,9 @@
 import { Component } from "react";
+import { Image } from "react-bootstrap";
 
 class MoviePicture extends Component {
   render() {
-    return <img className="poster m-4" src={this.props.src}></img>;
+    return <Image className="poster my-4" src={this.props.src}></Image>;
   }
 }
 

@@ -9,7 +9,9 @@ function App() {
     <div className="App">
       <MyNav></MyNav>
       <Container>
-        <Movies />
+        <Movies search="harry potter" />
+        <Movies search="lord of the rings" />
+        <Movies search="avengers" />
       </Container>
     </div>
   );
