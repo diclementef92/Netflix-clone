@@ -3,6 +3,7 @@ import MyNav from "./components/MyNav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import Movies from "./components/Movies";
+import MyFooter from "./components/MyFooter";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Movies search="lord of the rings" />
         <Movies search="avengers" />
       </Container>
+      <MyFooter></MyFooter>
     </div>
   );
 }
