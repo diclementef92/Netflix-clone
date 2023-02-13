@@ -1,11 +1,12 @@
 #root {
   background-color: black;
 }
+/* NAVBAR */
 .nav {
   display: flex;
   align-items: center;
 }
-.nav img {
+.navbar-brand img {
   width: 100px;
   height: 55px;
 }
@@ -58,10 +59,10 @@ h2 {
   color: #838383;
 }
 
-.footer-button {
+/* .footer-button {
   color: 838383;
   border-color: #838383;
-}
+} */
 .copyright {
   color: #838383;
   font-size: 0.6em;

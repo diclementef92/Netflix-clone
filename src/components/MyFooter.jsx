@@ -107,7 +107,7 @@ class MyFooter extends Component {
             </div>
             <div className="row">
               <div className="col col-12 text-left mb-2">
-                <button type="button" className="btn btn-dark  rounded-0 mt-3">
+                <button type="button" className="btn btn-dark rounded-0 mt-3">
                   Service Code
                 </button>
               </div>
