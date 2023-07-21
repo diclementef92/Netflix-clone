@@ -23,7 +23,7 @@ class MyNav extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link " href="#">
+              <a className="nav-link " href="/">
                 Home <span className="sr-only"></span>
               </a>
             </li>
@@ -33,7 +33,7 @@ class MyNav extends Component {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="#">
+              <a className="nav-link " href="./movies">
                 Movies
               </a>
             </li>

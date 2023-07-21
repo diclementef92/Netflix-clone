@@ -1,6 +1,7 @@
 #root {
   background-color: black;
 }
+
 /* NAVBAR */
 .nav {
   display: flex;
@@ -19,6 +20,18 @@
 .nav a:hover {
   color: rgb(170, 170, 170);
 }
+/* Carousel */
+.carousel img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.carousel-buttons button {
+  margin: 0 5px;
+}
+/*  */
 
 .poster {
   width: 100%;
@@ -59,10 +72,6 @@ h2 {
   color: #838383;
 }
 
-/* .footer-button {
-  color: 838383;
-  border-color: #838383;
-} */
 .copyright {
   color: #838383;
   font-size: 0.6em;
