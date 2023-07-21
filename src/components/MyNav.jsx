@@ -4,15 +4,9 @@ import { Nav } from "react-bootstrap";
 class MyNav extends Component {
   render() {
     return (
-      <Nav
-        className="navbar navbar-expand-lg navbar-dark"
-        // style="background-color: #221f1f"
-      >
+      <Nav className="navbar navbar-expand-lg navbar-dark">
         <a className="navbar-brand" href="#">
-          <img
-            src="/assets/img/logo.png"
-            // style="width: 100px; height: 55px"
-          />
+          <img src="/assets/img/logo.png" />
         </a>
         <button
           className="navbar-toggler"

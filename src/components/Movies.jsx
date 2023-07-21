@@ -17,11 +17,6 @@ class Movies extends Component {
       if (res.ok) {
         const body = await res.json();
         this.setState({ movies: body.Search });
-
-        // this.state.movies = body.Search;//non funziona
-
-        // console.log(body.Search);
-        // console.log(this.state.movies);
       } else {
         console.log("Error in fetch: response status", res.status);
       }
