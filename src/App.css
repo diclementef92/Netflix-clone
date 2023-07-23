@@ -20,19 +20,9 @@
 .nav a:hover {
   color: rgb(170, 170, 170);
 }
-/* Carousel */
-.carousel img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin-bottom: 20px;
+.carousel-item {
+  text-align: center;
 }
-
-.carousel-buttons button {
-  margin: 0 5px;
-}
-/*  */
-
 .poster {
   width: 100%;
   max-width: 200px;
