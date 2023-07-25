@@ -3,21 +3,18 @@
 }
 
 /* NAVBAR */
-.nav {
-  display: flex;
-  align-items: center;
-}
+
 .navbar-brand img {
   width: 100px;
   height: 55px;
 }
-.nav a {
+.nav-link {
   color: white;
 }
-.nav a.active {
+.nav-link.active {
   font-weight: bold;
 }
-.nav a:hover {
+.nav-link:hover {
   color: rgb(170, 170, 170);
 }
 .carousel-item {
