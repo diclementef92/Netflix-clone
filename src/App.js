@@ -6,6 +6,7 @@ import MyNav from "./components/MyNav";
 import Home from "./components/Home";
 import Movies from "./components/Movies";
 import MyFooter from "./components/MyFooter";
+import TvShows from "./components/TvShows";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <MyNav></MyNav>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/home" element={<Home />}></Route>
           <Route
             path="/movies"
             element={
@@ -24,6 +25,16 @@ function App() {
               </Container>
             }
           />
+          <Route
+            path="/tvshows"
+            element={
+              <Container>
+                <TvShows search="crime" />
+                <TvShows search="fantasy" />
+              </Container>
+            }
+          />
+          <Route path="/*" element={<Home />} />
         </Routes>
       </BrowserRouter>
       <MyFooter></MyFooter>
