@@ -33,7 +33,7 @@ class Movies extends Component {
           {this.state.movies.slice(0, 4).map((movie) => {
             return (
               <Col xs={12} sm={6} md={4} lg={3} key={movie.imdbID}>
-                <MoviePicture src={movie.Poster}></MoviePicture>
+                <MoviePicture movie={movie}></MoviePicture>
               </Col>
             );
           })}

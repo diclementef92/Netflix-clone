@@ -1,8 +1,38 @@
-import { Component, useState } from "react";
-import Modal from "react-modal";
+import { Table } from "react-bootstrap";
 
-const MovieDetail = () => {
-  return <span>dettagli film</span>;
+const MovieDetail = ({ movieData }) => {
+  return (
+    <>
+      <Table>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Year:</strong>
+            </td>
+            <td>{movieData.Year}</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Plot:</strong>
+            </td>
+            <td>{movieData.Plot}</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Genre:</strong>
+            </td>
+            <td>{movieData.Genre}</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>IMDB Rating:</strong>
+            </td>
+            <td>{movieData.imdbRating}</td>
+          </tr>
+        </tbody>
+      </Table>
+    </>
+  );
 };
 
 export default MovieDetail;
