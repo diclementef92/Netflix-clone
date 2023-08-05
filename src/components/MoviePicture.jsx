@@ -32,17 +32,18 @@ const MoviePicture = (props) => {
         onClick={handleShow}
         className="poster my-4"
         src={props.movie.Poster}
-      ></Image>
+      />
       <Modal show={show} onHide={handleClose} backdrop="static" keyboard={true}>
         <Modal.Header closeButton>
+          <Image className="poster-sm me-2" src={props.movie.Poster} />
           <Modal.Title>{movieData.Title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <MovieDetail movieData={movieData} />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Go back List
+          <Button variant="primary" onClick={handleClose}>
+            Go back to List
           </Button>
         </Modal.Footer>
       </Modal>

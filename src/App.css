@@ -31,7 +31,10 @@
 .poster:hover {
   transform: scale(1.1);
 }
-
+.poster-sm {
+  width: 100%;
+  max-width: 50px;
+}
 h2 {
   text-transform: capitalize;
 }

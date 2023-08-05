@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 const MovieDetail = ({ movieData }) => {
   return (
     <>
-      <Table>
+      <Table striped>
         <tbody>
           <tr>
             <td>
