@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Image, Nav, Navbar } from "react-bootstrap";
 
 class MyNav extends Component {
   render() {
@@ -7,7 +7,7 @@ class MyNav extends Component {
       <Navbar bg="dark" data-bs-theme="dark" activekey="Home">
         <Container>
           <Navbar.Brand href="#home">
-            <img src="/assets/img/logo.png" />
+            <Image src="/assets/img/logo.png" />
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="./home" eventKey="Home">

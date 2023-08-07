@@ -1,7 +1,16 @@
 #root {
   background-color: black;
 }
-
+.carousel-item {
+  text-align: center;
+}
+.carousel-item img {
+  width: 100%;
+}
+.mytitle {
+  text-align: center;
+  color: white;
+}
 /* NAVBAR */
 
 .navbar-brand img {
@@ -17,9 +26,7 @@
 .nav-link:hover {
   color: rgb(170, 170, 170);
 }
-.carousel-item {
-  text-align: center;
-}
+
 .poster {
   width: 100%;
   max-width: 200px;

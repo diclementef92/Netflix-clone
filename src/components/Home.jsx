@@ -16,8 +16,8 @@ const Home = () => {
   };
 
   return (
-    <Container>
-      <h1 className="text-center">Benvenuto su My Netflix</h1>
+    <>
+      <h1 className="mytitle">Benvenuto su My Netflix</h1>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <Image src={images[0]}></Image>
@@ -41,7 +41,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </Container>
+    </>
   );
 };
 
