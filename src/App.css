@@ -27,6 +27,10 @@
   color: rgb(170, 170, 170);
 }
 
+.search-bar {
+  width: 50%;
+  max-width: 400px;
+}
 .poster {
   width: 100%;
   max-width: 200px;
