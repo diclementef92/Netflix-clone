@@ -4,10 +4,6 @@ import MoviePicture from "./MoviePicture";
 import { fetchMoviesByValueAndType } from "../fetches/fetchMovies";
 
 const Movies = (props) => {
-  // state = {
-  //   movies: [],
-  //   isLoading: true,
-  // };
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [errMsg, setErrMsg] = useState("");
