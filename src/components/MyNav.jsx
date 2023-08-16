@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { Container, Image, Nav, Navbar } from "react-bootstrap";
 import { FiSearch } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const MyNav = () => {
   const [searchValue, setSearchValue] = useState("");
+  const navigate = useNavigate();
 
   const handlesearch = () => {
     console.log("searching:", searchValue);
+    navigate("/search/" + searchValue);
   };
 
   return (
@@ -18,13 +21,13 @@ const MyNav = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="./home" eventKey="Home">
+            <Nav.Link href="/home" eventKey="Home">
               Home
             </Nav.Link>
-            <Nav.Link href="./tvshows" eventKey="Tv Shows">
+            <Nav.Link href="/tvshows" eventKey="Tv Shows">
               Tv Shows
             </Nav.Link>
-            <Nav.Link href="./movies" eventKey="Movies">
+            <Nav.Link href="/movies" eventKey="Movies">
               Movies
             </Nav.Link>
           </Nav>

@@ -7,12 +7,13 @@ import Home from "./components/Home";
 import Movies from "./components/Movies";
 import MyFooter from "./components/MyFooter";
 import TvShows from "./components/TvShows";
+import Search from "./components/Search";
 
 function App() {
   return (
     <div className="App">
-      <MyNav></MyNav>
       <BrowserRouter>
+        <MyNav></MyNav>
         <Routes>
           <Route path="/home" element={<Home />}></Route>
           <Route
@@ -34,6 +35,7 @@ function App() {
               </Container>
             }
           />
+          <Route path="/search/:value" element={<Search />} />
           <Route path="/*" element={<Home />} />
         </Routes>
       </BrowserRouter>

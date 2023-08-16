@@ -13,7 +13,7 @@ const TvShows = (props) => {
 
   const retriveData = async () => {
     const data = await fetchMoviesByValueAndType(props.search, "series");
-    console.log(data);
+    // console.log(data);
     if (data.errMsg) {
       setErrMsg(data.errMsg);
     }
@@ -23,11 +23,11 @@ const TvShows = (props) => {
 
   useEffect(() => {
     retriveData();
-  }, []);
+  }, [props.search]);
 
   return (
     <>
-      <h2 className="text-light mt-4">{props.search}</h2>
+      <h2 className="text-light mt-4">Tv Shows about "{props.search}"</h2>
       {isLoading ? (
         <Placeholder as="p" animation="glow">
           <Placeholder xs={12} />
