@@ -13,6 +13,18 @@ const MovieDetail = ({ movieData }) => {
           </tr>
           <tr>
             <td>
+              <strong>Director:</strong>
+            </td>
+            <td>{movieData.Director}</td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Actors:</strong>
+            </td>
+            <td>{movieData.Actors}</td>
+          </tr>
+          <tr>
+            <td>
               <strong>Plot:</strong>
             </td>
             <td>{movieData.Plot}</td>
