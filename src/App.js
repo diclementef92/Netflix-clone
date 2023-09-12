@@ -35,7 +35,14 @@ function App() {
               </Container>
             }
           />
-          <Route path="/search/:value" element={<Search />} />
+          <Route
+            path="/search/:value"
+            element={
+              <Container>
+                <Search />
+              </Container>
+            }
+          />
           <Route path="/*" element={<Home />} />
         </Routes>
       </BrowserRouter>
