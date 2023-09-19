@@ -1,12 +1,9 @@
-import { useEffect, useState } from "react";
-import { Col, Placeholder, Row } from "react-bootstrap";
-import MoviePicture from "./MoviePicture";
-import { fetchMoviesByValueAndType } from "../fetches/fetchMovies";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Movies from "./Movies";
 import TvShows from "./TvShows";
 
-const Search = (props) => {
+const Search = () => {
   let { value } = useParams();
 
   useEffect(() => {}, []);

@@ -31,17 +31,17 @@ const MyNav = () => {
               Movies
             </Nav.Link>
           </Nav>
-          <div class="input-group search-bar">
+          <div className="input-group search-bar">
             <input
-              class="form-control border-secondary"
+              className="form-control border-secondary"
               type="seach"
               placeholder="search"
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
             />
-            <div class="input-group-append">
+            <div className="input-group-append">
               <button
-                class="btn btn-outline-secondary"
+                className="btn btn-outline-secondary"
                 type="button"
                 onClick={handlesearch}
               >

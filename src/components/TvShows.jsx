@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
-import { Col, Placeholder, Row } from "react-bootstrap";
+import { Alert, Col, Placeholder, Row } from "react-bootstrap";
 import MoviePicture from "./MoviePicture";
 import { fetchMoviesByValueAndType } from "../fetches/fetchMovies";
 
 const TvShows = (props) => {
-  // state = {
-  //   tvshows: [],
-  // };
   const [tvshows, setTvshows] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [errMsg, setErrMsg] = useState("");
 
   const retriveData = async () => {
     const data = await fetchMoviesByValueAndType(props.search, "series");
-    // console.log(data);
+
     if (data.errMsg) {
       setErrMsg(data.errMsg);
+      setIsLoading(false);
+      return;
     }
+    setErrMsg("");
     setTvshows(data);
     setIsLoading(false);
   };
@@ -32,6 +32,8 @@ const TvShows = (props) => {
         <Placeholder as="p" animation="glow">
           <Placeholder xs={12} />
         </Placeholder>
+      ) : errMsg ? (
+        <Alert variant="danger">{errMsg}</Alert>
       ) : (
         <Row>
           {tvshows.slice(0, 4).map((movie) => {

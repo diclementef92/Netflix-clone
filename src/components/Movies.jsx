@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Col, Placeholder, Row } from "react-bootstrap";
+import { Alert, Col, Placeholder, Row } from "react-bootstrap";
 import MoviePicture from "./MoviePicture";
 import { fetchMoviesByValueAndType } from "../fetches/fetchMovies";
 
@@ -10,10 +10,13 @@ const Movies = (props) => {
 
   const retriveData = async () => {
     const data = await fetchMoviesByValueAndType(props.search, "movie");
-    // console.log(data);
+
     if (data.errMsg) {
       setErrMsg(data.errMsg);
+      setIsLoading(false);
+      return;
     }
+    setErrMsg("");
     setMovies(data);
     setIsLoading(false);
   };
@@ -29,6 +32,8 @@ const Movies = (props) => {
         <Placeholder as="p" animation="glow">
           <Placeholder xs={12} />
         </Placeholder>
+      ) : errMsg ? (
+        <Alert variant="danger">{errMsg}</Alert>
       ) : (
         <Row>
           {movies.slice(0, 4).map((movie) => {
