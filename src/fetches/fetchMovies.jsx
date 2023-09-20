@@ -11,6 +11,10 @@ export const fetchMoviesByValueAndType = async (value, type) => {
     );
     if (res.ok) {
       const body = await res.json();
+      if (body.Error) {
+        return { errMsg: body.Error };
+      }
+
       return body.Search;
     } else {
       console.log("Error in fetch: response status", res.status);

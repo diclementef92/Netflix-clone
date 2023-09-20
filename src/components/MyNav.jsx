@@ -1,3 +1,4 @@
+import { keyboard } from "@testing-library/user-event/dist/keyboard";
 import { useState } from "react";
 import { Container, Image, Nav, Navbar } from "react-bootstrap";
 import { FiSearch } from "react-icons/fi";
@@ -8,8 +9,8 @@ const MyNav = () => {
   const navigate = useNavigate();
 
   const handlesearch = () => {
-    console.log("searching:", searchValue);
-    navigate("/search/" + searchValue);
+    console.log("searching:", searchValue.trim());
+    navigate("/search/" + searchValue.trim());
   };
 
   return (
@@ -21,13 +22,13 @@ const MyNav = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/home" eventKey="Home">
+            <Link to="/home" eventkey="Home">
               Home
             </Link>
-            <Link to="/tvshows" eventKey="Tv Shows">
+            <Link to="/tvshows" eventkey="Tv Shows">
               Tv Shows
             </Link>
-            <Link to="/movies" eventKey="Movies">
+            <Link to="/movies" eventkey="Movies">
               Movies
             </Link>
           </Nav>
@@ -38,6 +39,10 @@ const MyNav = () => {
               placeholder="search"
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
+              onKeyDown={(event) => {
+                console.log(event.key);
+                if (event.key === "Enter") handlesearch();
+              }}
             />
             <div className="input-group-append">
               <button
