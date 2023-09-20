@@ -2,7 +2,7 @@
 export const fetchMoviesByValueAndType = async (value, type) => {
   try {
     let res = await fetch(
-      "http://www.omdbapi.com/?apikey=" +
+      "https://www.omdbapi.com/?apikey=" +
         process.env.REACT_APP_API_KEY +
         "&s=" +
         value +
@@ -25,7 +25,7 @@ export const fetchMoviesByValueAndType = async (value, type) => {
 export const fetchMovieById = async (imdbId) => {
   try {
     let res = await fetch(
-      "http://www.omdbapi.com/?apikey=" +
+      "https://www.omdbapi.com/?apikey=" +
         process.env.REACT_APP_API_KEY +
         "&i=" +
         imdbId
