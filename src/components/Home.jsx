@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 
 const Home = () => {

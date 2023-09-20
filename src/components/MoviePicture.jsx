@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Alert, Button, Image, Modal, Table } from "react-bootstrap";
+import { Alert, Button, Image, Modal } from "react-bootstrap";
 import MovieDetail from "./MovieDetail";
 import { fetchMovieById } from "../fetches/fetchMovies";
 
