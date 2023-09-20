@@ -17,13 +17,15 @@
   width: 100px;
   height: 55px;
 }
-.nav-link {
+.navbar-nav a {
   color: white;
+  margin-right: 10px;
+  text-decoration: none;
 }
-.nav-link.active {
+.navbar-nav a.active {
   font-weight: bold;
 }
-.nav-link:hover {
+.navbar-nav a:hover {
   color: rgb(170, 170, 170);
 }
 
