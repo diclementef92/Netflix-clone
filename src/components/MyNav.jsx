@@ -1,4 +1,3 @@
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 import { useState } from "react";
 import { Container, Image, Nav, Navbar } from "react-bootstrap";
 import { FiSearch } from "react-icons/fi";

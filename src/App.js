@@ -15,7 +15,14 @@ function App() {
       <BrowserRouter>
         <MyNav></MyNav>
         <Routes>
-          <Route path="/home" element={<Home />}></Route>
+          <Route
+            path="/home"
+            element={
+              <Container>
+                <Home />
+              </Container>
+            }
+          ></Route>
           <Route
             path="/movies"
             element={
