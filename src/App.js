@@ -50,7 +50,14 @@ function App() {
               </Container>
             }
           />
-          <Route path="/*" element={<Home />} />
+          <Route
+            path="/*"
+            element={
+              <Container>
+                <Home />
+              </Container>
+            }
+          />
         </Routes>
       </BrowserRouter>
       <MyFooter></MyFooter>
