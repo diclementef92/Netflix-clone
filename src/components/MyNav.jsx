@@ -13,7 +13,13 @@ const MyNav = () => {
   };
 
   return (
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark" activekey="Home">
+    <Navbar
+      expand="lg"
+      data-bs-theme="dark"
+      bg="dark"
+      variant="dark"
+      activekey="Home"
+    >
       <Container>
         <Navbar.Brand href="#home">
           <Image src="/assets/img/logo.png" />
