@@ -21,13 +21,13 @@ const MyNav = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="./home" eventKey="Home">
+            <Nav.Link href="~/home" eventKey="Home">
               Home
             </Nav.Link>
             <Link to="./tvshows" eventKey="Tv Shows">
               Tv Shows
             </Link>
-            <Nav.Link href="./movies" eventKey="Movies">
+            <Nav.Link href="~/movies" eventKey="Movies">
               Movies
             </Nav.Link>
           </Nav>
